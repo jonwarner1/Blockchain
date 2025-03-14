@@ -11,13 +11,14 @@
     <div id="cuerpo">
         <header id="encabezado">
             <h1>Encabezado de la página web, elemento header</h1>
+            <img src="logo.png" alt="Logo Espacial">
         </header>
         
         <nav id="menu">
             <ul>
-                <li>menú 1</li>
-                <li>menú 2</li>
-                <li>menú 3</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Análisis</a></li>
+                <li><a href="#">Conclusión</a></li>
             </ul>
         </nav>
         
@@ -40,10 +41,29 @@
             <p>dos</p>
             <p>tres</p>
         </aside>
-        
+
+        <aside id="lateral">
+            <form name="formulario">
+                <h2>Formulario web</h2>
+                <table border="0">
+                    <tr><td>Nombre:</td><td><input type="text" name="txtNombre" required></td></tr>
+                    <tr><td>Correo:</td><td><input type="email" name="miEmail" placeholder="Ingrese email" required></td></tr>
+                    <tr><td>Estrato:</td><td><input type="number" name="numEst" min="1" max="6" step="1" required></td></tr>
+                    <tr><td>Fecha:</td><td><input type="date" name="fecha" required></td></tr>
+                    <tr><td colspan="2"><input type="submit" name="btnEnviar" value="Enviar"></td></tr>
+                </table>
+            </form>
+        </aside>
+
         <footer id="pie">
             Información de la empresa, elemento footer
+            <img src="footer.png" alt="Imagen en el pie de página">
         </footer>
+
+        <!-- Imagen con enlace -->
+        <a href="https://www.nasa.gov" target="_blank">
+            <img src="espacio.jpg" alt="Explora el Espacio" width="200">
+        </a>
     </div>
 </body>
 </html>
